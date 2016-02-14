@@ -472,6 +472,8 @@ module.exports = function (grunt) {
     'htmlmin'
   ]);
 
+  grunt.loadNpmTasks('grunt-build-control');
+
   grunt.registerTask('default', [
     'newer:eslint',
     'test',
